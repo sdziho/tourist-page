@@ -1,0 +1,44 @@
+.gradovi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    float:left;
+    margin-top: 10%;
+}
+.pretrazi{
+    margin-left: 40%;
+}
+
+.sjena{
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 200px;
+    background-color: rgb(226, 227, 228);
+    z-index: -1;
+    border-bottom: 2px solid grey;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+        &:hover{
+            border-bottom: 3px  solid black;
+        }
+}
+
+.mat-form-field{
+    position: relative;
+    margin-left: 5px;
+    //background-color: rgba(243, 22, 22, 0.5);
+    
+}
+::ng-deep .mat-form-field-label{
+    color: rgb(0, 0, 0);
+    //background-color: rgba(243, 22, 22, 0.5);
+    width:10%;
+    
+}
+::ng-deep.mat-form-field-appearance-outline{
+    color:black;
+}
